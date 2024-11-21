@@ -50,6 +50,8 @@ sudo mkdir -p /mnt/iso
 sudo mount -o loop Descargas/debian-12.7.0-amd64-netinst.iso /mnt/iso/
 ```
 Si usamos el comando `ls` en ese directorio, podemos comprobar que tenemos los archivos:
-`alejandro$ ls
+```
+alejandro$ ls
 boot  debian  doc  firmware  install.amd  md5sum.txt  pool         README.mirrors.html  README.source
-css   dists   EFI  install   isolinux     pics        README.html  README.mirrors.txt   README.txt`
+css   dists   EFI  install   isolinux     pics        README.html  README.mirrors.txt   README.txt
+```
