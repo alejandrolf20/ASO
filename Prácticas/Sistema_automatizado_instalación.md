@@ -75,9 +75,9 @@ dr-xr-xr-x 1 root root  2048 ago 31 12:42 pool
 -r--r--r-- 1 root root   543 ago 31 12:41 README.source
 -r--r--r-- 1 root root  5402 ago 31 12:42 README.txt
 ```
-Para montar el iso automatizado, no usaremos todos los ficheros, por lo que copiaremos los necesarios en otro directorio y crearemos un enlace simbólico para el resto:
+Para montar la iso automatizada, no usaremos todos los ficheros, por lo que copiaremos los necesarios en otro directorio y crearemos un enlace simbólico para el resto:
 
-```bash
+```
 mkdir iso-preseed && cd iso-preseed
 cp -pr /mnt/iso/install.amd install.amd
 cp -pr /mnt/iso/dists dists
