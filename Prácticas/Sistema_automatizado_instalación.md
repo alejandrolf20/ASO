@@ -45,14 +45,14 @@ Nos descargamos el archivo de la versión más reciente, el cuál en este caso, 
 
 Una vez que nos hemos descargado la iso, crearemos un directorio en el que vamos a montarla para realizar los cambios convenientes:
 
-```bash
+```
 sudo mkdir -p /mnt/iso
 sudo mount -o loop Descargas/debian-12.7.0-amd64-netinst.iso /mnt/iso/
 ```
 
 Si usamos el comando `ls` en ese directorio, podemos comprobar que tenemos los archivos:
 
-```bash
+```
 [/mnt/iso]
 alejandro$ ls -l
 total 133
@@ -89,7 +89,7 @@ ln -s . debian
 
 Comprobamos los ficheros de nuevo:
 
-```bash
+```
 [~/iso-preseed] (master)
 alejandro$ ls -l
 total 4
@@ -102,7 +102,7 @@ dr-xr-xr-x 5 alejandro alejandro   58 ago 31 12:42 pool
 
 Dentro de este directorio, crearemos otro en el que alojaremos nuestro archivo `preseed.cfg`:
 
-```bash
+```
 [~/iso-preseed] (master)
 alejandro$ sudo mkdir archivo
 
@@ -115,7 +115,7 @@ alejandro$ sudo nano preseed.cfg
 
 Nuestro archivo `preseed.cfg` tendrá la siguiente estructura:
 
-```bash
+```
 ##############################################################################
 
 #   Instalación automatizada de Debian 12
@@ -259,14 +259,14 @@ d-i finish-install/reboot_in_progress note
 
 Cabe mencionar que debemos de codificar las contraseñas para que no aparezcan en texto plano, para ello usaremos el comando```mkpasswd --method=SHA-512``` más la contraseña que queramos usar; como ejemplo, podemos usar:
 
-```bash
+```
 mkpasswd --method=SHA-512 usuario
 ```
 Este comando nos dará un `hash` que corresponderá a la contraseña que queramos usar.
 
 El siguiente paso que realizaremos será de editar el archivo `txt.cfg` ubicado dentro del directorio `/isolinux` de la siguiente forma:
 
-```bash
+```
 default install
 label install
         menu label ^Install
@@ -281,13 +281,13 @@ locale=es_ES console-setup/ask_detect=false keyboard-configuration/xkb-keymap=es
 
 Al realizar cambios en el directorio `/isolinux`, debemos generar la verificación de éste, que irá alojada en el CD, para ello ejecutamos el siguiente comando:
 
-```bash
+```
 md5sum `find ! -name "md5sum.txt" ! -path "./isolinux/*" -follow -type f` > md5sum.txt
  ```
 
 Por último, generaremos la iso desde el directorio inicial de nuestro sistema ejecutando el siguiente comando:
 
- ```bash
+ ```
  sudo genisoimage -o ASO.iso -l -r -J -no-emul-boot -boot-load-size 4 -boot-info-table -b isolinux/isolinux.bin -c isolinux/boot.cat iso-preseed
  ```
 
