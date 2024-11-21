@@ -257,14 +257,14 @@ tasksel tasksel/first multiselect standard, ssh-server
 d-i finish-install/reboot_in_progress note
 ```
 
-Cabe mencionar que debemos de codificar las contraseñas para que no aparezcan en texto plano, para ello usaremos el comando```mkpasswd --method=SHA-512``` más la contraseña que queramos usar; como ejemplo, podemos usar:
+Cabe mencionar que debemos codificar las contraseñas para que no aparezcan en texto plano, para ello usaremos el comando```mkpasswd --method=SHA-512``` más la contraseña que queramos usar; como ejemplo, podemos utilizar `usuario`:
 
 ```
 mkpasswd --method=SHA-512 usuario
 ```
-Este comando nos dará un `hash` que corresponderá a la contraseña que queramos usar.
+Este comando nos dará un `hash` que corresponderá a la contraseña que utilizaremos.
 
-El siguiente paso que realizaremos será de editar el archivo `txt.cfg` ubicado dentro del directorio `/isolinux` de la siguiente forma:
+El siguiente paso que realizaremos será editar el archivo `txt.cfg`, ubicado dentro del directorio `/isolinux`, de la siguiente forma:
 
 ```
 default install
