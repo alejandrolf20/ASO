@@ -299,7 +299,7 @@ Tan sólo nos quedaría crear una nueva máquina virtual con esta nueva iso:
 
 ![2](img/2.png)
 
-Escogemos la opción de instalación que hemos creado, en este caso la llamada **Instalación automática de Debian 12**,:
+Escogemos la opción de instalación que hemos creado, en este caso la llamada **Instalación automática de Debian 12**:
 
 ![3](img/3.png)
 
