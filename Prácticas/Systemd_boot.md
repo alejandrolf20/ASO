@@ -170,7 +170,7 @@ Además, podemos utilizar la herramienta `neofetch` para comprobar la versión d
 
 ## 2.- Cambiar el tradicional gestor de arranque grub por systemd boot en una máquina virtual con debian 12.
 
-![54](img/54.png)
+![55](img/55.png)
 
 ### Ventajas y Desventajas
 
