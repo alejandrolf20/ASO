@@ -9,3 +9,5 @@
 - [Systemd/sshfs](Prácticas/Systemd_y_sshfs.md)
 
 - [Systemd-Boot](Prácticas/Systemd_boot.md)
+
+- [Recolección centralizada de logs de sistema, mediante journald](Prácticas/Journald.md)
