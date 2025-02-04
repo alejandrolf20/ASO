@@ -11,3 +11,5 @@
 - [Systemd-Boot](Prácticas/Systemd_boot.md)
 
 - [Recolección centralizada de logs de sistema, mediante journald](Prácticas/Journald.md)
+
+- [Configuración/activación de SELinux](Prácticas/Configuración_activación_SELinux.md)
