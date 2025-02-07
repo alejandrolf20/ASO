@@ -518,6 +518,8 @@ prueba.txt
 Prueba de funcionamiento con NFS
 ```
 
+---
+
 ### SSH
 
 Para cambiar el **puerto** que se usa por defecto **ssh** y **habilitar el inicio de sesión** al usuario **root** del **servidor Rocky**, añadiremos las siguientes líneas en el **fichero de configuración** de ssh:
