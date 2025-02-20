@@ -13,3 +13,5 @@
 - [Recolección centralizada de logs de sistema, mediante journald](Prácticas/Journald.md)
 
 - [Configuración/activación de SELinux](Prácticas/Configuración_activación_SELinux.md)
+
+- [Instalación y configuración inicial de OpenLDAP](Prácticas/OpenLDAP_I.md)
